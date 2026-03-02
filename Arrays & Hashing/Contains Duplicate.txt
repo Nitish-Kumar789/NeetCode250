@@ -1,0 +1,24 @@
+Question is very simple, so here we have to find out 
+if nums contains duplicate or not 
+means 
+if any element is there for two or more times 
+then we have to return true
+else 
+return false if every element is unique 
+sol01:
+so what we can do 
+we can simply put all element in a map 
+and then will traverse  and check if value is 1 for all key 
+if thats the case return true 
+or return false 
+time complexity : O(n)
+space compexity : O(n)
+
+-------------------------------------
+How break Works
+
+break exits the nearest loop immediately.
+
+Control moves to the first line after the loop.
+
+It does NOT check remaining elements.
