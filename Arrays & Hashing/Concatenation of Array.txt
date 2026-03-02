@@ -1,0 +1,22 @@
+So here we have on array and we have to make a new res array 
+having length 2n of org lenth 
+so we can find len and then we can make 2n len 
+like 
+
+int n = nums.size();
+
+vector<int> res(2*n,0);
+for(int i = 0; i< n;i++)
+{
+    res[i] = nums[i];
+    res[i + n] = nums[i];
+}
+
+return res; 
+
+what if: 
+nums is empty not allowed 
+only one element solved
+all same element solved 
+
+
