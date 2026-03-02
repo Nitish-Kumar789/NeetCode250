@@ -1,0 +1,44 @@
+Very easy we have two string 
+s and t 
+and we have to check if both are anagram or not 
+
+app01: 
+we can simply sort and will check if anagram or not 
+
+app02:
+we can put all char in map and then will check 
+according to requirements
+we can check for ordered map/unordered map 
+
+less go with app01: 
+
+we can simply: 
+sort both the string
+and then we can check 
+
+s and t 
+sort(s.begin(),s.end())
+sort(t.begin(),t.end());
+return s == t; 
+
+let s = "rat"
+sort => art
+
+t = "tar"
+sort => art 
+
+since after sorting both are same only 
+so we can simply return true 
+
+
+what if 
+s empty  t have char -> solved
+s have more char t have less char -> solved
+
+s have differenct char than t -> solved
+both have same char but jumbled up -> solved 
+
+
+time complexity: O(nlogn + mlogm )
+sorting occurs using log(n) extra space 
+space complexity : O(log n + log m)
