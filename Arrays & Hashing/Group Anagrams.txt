@@ -1,0 +1,103 @@
+So what we have we have one strs array 
+and we have to group the anagrams
+
+
+
+system: 
+question:  input params : vector of strings 
+result : vector of vector of strings 
+
+app01: 
+so what we can can do 
+
+we can simply make a map for each elemnte 
+and if it matchen then we can group togeterhr 
+
+so let suppose 
+e a t will becomae a e t 
+tea will become a et 
+
+so map for both are same 
+
+master map or what 
+
+or sth like 
+sort every  strs 
+first map then sort 
+
+eat -> aet
+tea -> aet 
+tan -> ant 
+ate -> aet 
+nat -> ant 
+bat -> abt 
+
+after that what we can do os tith 
+
+sorting 
+all gorup toght and like that 
+but we nalso need index how ot od that 
+--------------------------------
+
+okay another approach 
+
+e a t ->
+
+a -> 1 
+e -> 1 
+t -> 1 
+
+now traverse thorugh strs 
+we will make for eat 
+
+what if that is dfferent int hat case 
+we will make anotehr map 
+so how manny map to compare 
+
+three ma
+
+match don't match then create another map 
+so  what can be done 
+we can simply 
+make a map for sure 
+map 
+key -> val, val, val 
+str  -> arrary of strs 
+
+
+eat ->  ate 
+=> aet -> eat 
+tea
+
+
+x_temp =eat 
+aet => eat, tea, ate  
+ant -> tan, nat 
+abt -> bat 
+
+
+
+
+map<string, vector<string>> mp; 
+
+for(auto x : strs)
+{
+    string x_temp = x; 
+    sort(x_temp.begin(),x_temp.end());
+    mp[x_temp].push_back(x)
+}
+
+vector<vector<sting>> res;
+for(auto x : mp)
+{
+    res.push_back(x.second);
+
+}
+
+return res; 
+
+time complexity: 
+O(n * k log k + n * k log n)
+
+space complexity : 
+O(n * k log k + n * k log n)
