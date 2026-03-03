@@ -1,0 +1,4 @@
+So, in this question of Longest common Prefix 
+we have to only return the strs part which is common to all strs 
+thats it 
+
