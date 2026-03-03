@@ -1,0 +1,25 @@
+so we have a nums array of size n 
+I have to return the majority element 
+the majority element is that element 
+which is present more than n/2 times 
+
+means 
+let suppose we have nums array 
+3 2 3 
+n = 3 
+3/2 = 1
+greate than 1 
+it may be one or many 
+we have to give count 
+assumign that there will be only one element 
+and its alwasy there 
+then its uper easy 
+we have to simply 
+put all elmetns in a map 
+and check frequency if freq matches then return that element 
+
+is there any edge case: 
+I think no 
+time compexity : O(n)
+space complexity: O(n)
+
