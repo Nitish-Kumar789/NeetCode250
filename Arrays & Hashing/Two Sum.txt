@@ -1,0 +1,78 @@
+We are given one nums array and target and we have to return indices of two element such that they sum to target 
+
+Note: there is only one pair possible 
+we cann't use same element twice 
+----------------------------------------------------------
+app01: 
+Can we solve using sorting 
+
+int n = nums.size();
+
+sort(nums.begin(),nums.end());
+
+int i = 0, j = n-1;
+
+while (i < j)
+{
+    int sum = nums[i] + nums[j];
+    if(sum == tg)
+    return {i,j};
+    else if(sum < tg)
+    i++;
+    else
+    j--;
+}
+return {}
+
+
+
+
+what if: 
+if target not possible not the case 
+
+2 7 11 15 
+i = 0; j = 3 
+
+17 
+2 11 13 
+2 7 
+
+2 3 4 
+
+but this approach has a flaw 
+because after sorting index will be changed 
+
+
+------------------------------
+
+app02: we can also solve using map approach 
+thats why we need to follow the normal map approach 
+
+so what we can do: 
+we will traverse through nums array 
+and will check if tg - nums[i] != 0 is presnet in map or not 
+if yes
+here you go return {i, mp[nums[i]] - 1} 
+if no 
+then simply put 
+mp[nums[i]] = i + 1; 
+
+
+so what if we have 2 2 7 tg 9 
+
+so for two 
+2 -> 1 
+2 -> 2 
+0 
+
+2 7 11 15  tg = 9 
+
+7 = 0 
+
+2 -> 1 
+0 , 1 
+
+
+
+
+
