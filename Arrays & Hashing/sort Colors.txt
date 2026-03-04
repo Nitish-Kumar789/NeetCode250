@@ -1,0 +1,15 @@
+so here we have nums array having three types of value 
+0 1 2 
+and here we have to sort that like fist 0 then 1 then 2 
+so what we can do here 
+we can simply take the count of 0's 1's and 2's 
+
+and then we can later fill that in nums array 
+
+
+
+app 01: 
+
+
+as usual, we will use three variable a, b and c
+and then we have to check for the count and c/s fill that in nums[i] array 
