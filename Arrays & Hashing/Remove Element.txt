@@ -1,0 +1,84 @@
+So the question is that we have one nums array 
+and we have to check for the count of element 
+which is not equal to val 
+let total count is n 
+and element count which equal to val is k 
+so n-k count of element will be present in the 
+beginnnig of array 
+
+app01: 
+so what can be done 
+
+int n = nums.size();
+int k = 0; 
+for(int i = 0 ;i < n;i++)
+{
+    if(nums[i] == val)
+    k++;
+
+}
+
+n = n - k ;
+
+there are multiple ways: 
+let suppose what we are doing 
+
+app01: 
+
+we are making another array 
+and pushing all elments which is not equal to val 
+and later we are pushing back the same element to nums 
+and will return n;
+
+app02:
+
+let suppose in-place 
+3 2 2 3 
+val 3 
+
+we will use two pointer and will move from left to right for both the points 
+let i = 0[point to val] j = 1[point to non-val]
+
+i = 0 & j = 1 
+swipe the value 
+2 3 2 3 
+so
+
+swipe(nums[i], nums[j]);
+
+also this is not array 
+and in array, things are differenct 
+
+
+let suppose we are having array 
+
+we can make array as visited array, how? 
+
+let suppose arrary having length 5 
+then in that case value will be from 0 to n - 1
+
+
+we can simply increase the value from 
+
+nums[nums[i]] += n; 
+
+while travelling 
+step01 
+nums[i] = nums[i] % n; 
+
+if(nums[i] > n) already visited 
+nums[i] %= n; 
+
+
+
+and here we can do such thing 
+
+so basically this is two pointer approach 
+how to change the i and j 
+value will be simply swapped thats it
+nums = [3,2,2,3] val = 3 
+
+so what we can be done, 
+
+
+so what can be done 
