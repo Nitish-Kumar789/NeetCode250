@@ -1,0 +1,45 @@
+| Feature           | HashSet                     | HashMap                         |
+| ----------------- | --------------------------- | ------------------------------- |
+| Data stored       | Only **values**             | **Key–Value pairs**             |
+| Duplicate allowed | ❌ Not allowed               | ❌ Duplicate keys not allowed |
+| Access            | Directly by value           | By **key**                      |
+| Internal working  | Uses **HashMap internally** | Uses hashing to store key-value |
+
+
+
+--------------------------------
+so one of important thing is that 
+data structure which is storing values in sorted order 
+is using red - black tree 
+it is a type of bst 
+and time complexity O(log n)
+
+
+for unordered_set => its using hash set as ds 
+where key will be bucket index and value will the val entered by us 
+thats why sometime there might be collision and 
+time complexity will be O(n) in worst case 
+
+Value stored in that bucket
+
+Buckets usually store elements using linked list (or nodes).
+
+Example structure:
+
+Bucket 0 → 
+Bucket 1 → 11
+Bucket 2 → 42
+Bucket 3 → 
+Bucket 4 → 
+Bucket 5 → 25
+Bucket 6 → 
+Bucket 7 → 17 → 37
+Bucket 8 → 
+Bucket 9 →
+
+Internally (very simplified)
+
+unordered_set<int> is almost like:
+
+vector<list<int>> table;
+
