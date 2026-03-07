@@ -1,0 +1,15 @@
+So here we have function that asks that we have to reverse the string 
+input string is array of charactes 
+
+
+
+so cann't we do something like 
+here we have 
+stiring s = h e l l o 
+
+and then we have to reverse it like 
+o l l e h
+
+we can use two pointer approach like 
+
+int i, int j 
