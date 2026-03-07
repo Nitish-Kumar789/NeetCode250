@@ -1,0 +1,14 @@
+Red-black tree is a special type of BST 
+there might be the case that entire tree is left skewed or right skewed
+
+
+
+Basic Rules
+
+Each node is either Red or Black
+
+Root node is always Black
+
+Two red nodes cannot be adjacent
+
+Every path from root to leaf has the same number of black nodes
