@@ -1,0 +1,53 @@
+So here what we are  having 
+question is super easy 
+two steps process: 
+what we can do here is that 
+
+step01: 
+make a new string 
+
+normal traverse and then check for char 
+
+Uppwer case 
+unicode form 65 to 92
+lowercase from 97 to 122 
+number 48 to 57 
+
+string str = ""
+for(auto x : s)
+{
+    if(x >= 65 to x <= 90) 
+    {
+        str += (char) x + 32
+    }
+
+    else if lowercase add directly 
+    else if(x>= 97 and x <= 122 )
+    str += x;
+    else if(x >= 48 and x <= 57 )
+
+
+
+}
+
+
+
+step02: 
+check if its pallindrome or not 
+
+
+checking for pallindrome
+
+int i = 0 ;i int j = n - 1; 
+
+while( i < j)
+{
+    if(s[i] != s[j])
+    return false;
+    i++;
+    j--;
+}
+retuen true; 
+
+
+ab
